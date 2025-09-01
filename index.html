@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Image Gallery</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Modern Gallery</h1>
+        <p class="subtitle">Discover beautiful moments captured in time</p>
+    </header>
+
+    <main class="gallery-container">
+        <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="architecture">Architecture</button>
+            <button class="filter-btn" data-filter="people">People</button>
+            <button class="filter-btn" data-filter="abstract">Abstract</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+           
+        </div>
+    </main>
+
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="close-btn" id="closeBtn">&times;</button>
+            <img id="lightboxImg" src="" alt="">
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxDesc"></p>
+            </div>
+        </div>
+        <button class="nav-btn prev-btn" id="prevBtn">&#8249;</button>
+        <button class="nav-btn next-btn" id="nextBtn">&#8250;</button>
+        <div class="counter" id="counter"></div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
